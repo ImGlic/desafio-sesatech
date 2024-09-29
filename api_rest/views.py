@@ -14,6 +14,7 @@ def get_products(request):
         return Response(serializer.data)
     return Response(status=status.HTTP_400_BAD_REQUEST)
 
+
 @api_view(['GET', 'PUT'])
 def get_product_by_id(request, product_id):
     try:

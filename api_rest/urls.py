@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.urls import path, include
-
 from . import views
 
 urlpatterns = [
@@ -14,4 +13,7 @@ urlpatterns = [
     path('sales/list/<int:sale_id>/', views.get_sale_by_id, name='get_sale_by_id'),
     path('sales/<int:sale_id>/cancel/', views.cancel_sale, name='cancel_sale'),
     path('sales/<int:sale_id>/add_products/', views.add_products_to_sale, name='add_products_to_sale'),
+
+
+
 ]
