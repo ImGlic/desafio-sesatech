@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from .models import Products, Sale, ProductSale
-from .serializers import ProductsSerializer, SaleSerializer, ProductSaleSerializer
+from .serializer import ProductsSerializer, SaleSerializer, ProductSaleSerializer
 
 @api_view(['GET'])
 def get_products(request):
