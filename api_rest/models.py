@@ -22,17 +22,10 @@ class Products(models.Model):
 class Sale(models.Model):
 
     total  = models.DecimalField(max_digits=10, decimal_places=5, default=0.0)
+    products = models.ManyToManyField(Products)
 
     class Meta:
         ordering = ['id']
 
-class ProductSale(models.Model):
 
-    product_id = models.ForeignKey(Products, on_delete=models.CASCADE)
-    sale_id = models.ForeignKey(Sale, on_delete=models.CASCADE)
-    price = models.DecimalField(max_digits=10, decimal_places=5)
-    quantity = models.IntegerField()
-
-    class Meta:
-        ordering = ['id']
    
