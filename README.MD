@@ -133,6 +133,10 @@ curl -X POST http://localhost:8000/api/sales/1/add-product/ -H "Content-Type: ap
 curl -X POST http://localhost:8000/api/sales/1/cancel/
 ```
 
+## Documentação Swagger
+
+- Para visualizar a documentação interativa via Swagger, acesse o seguinte link: [Swagger Documentation](http://localhost:8000/swagger/)
+
 
 ## Postman Documentation
 
