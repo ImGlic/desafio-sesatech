@@ -24,8 +24,8 @@
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seuusername/seuprojeto.git
-    cd seuprojeto
+    git clone https://github.com/ImGlic/desafio-sesatech.git
+    cd desafio-sesatech
     ```
 
 2. Crie um ambiente virtual:
